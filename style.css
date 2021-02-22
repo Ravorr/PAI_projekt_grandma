@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+* {
+    font-family: 'Kaushan Script', cursive;
+}
+body {
+    margin: 0;
+}
+button {
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    background-color: #fff;
+    padding-bottom: 10px;
+    position: absolute;
+    width: 100%;
+}
+header .left{
+    display: flex;
+    margin: auto;
+    flex: 5;
+    margin: 0 10px;
+    justify-content: space-between;  
+}
+header .right {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10px;
+    margin: auto 0;
+}
+
+header .left ul {
+    display: flex;
+    list-style: none;
+    margin-right: 35%;
+}
+header .left ul li {
+    margin: 0 10px;
+    color: rgb(245, 137, 155);
+    font-size: 22px;
+}
+header .right button {
+    background-color: transparent;
+    border-radius: 5px;
+    margin: 5px;
+    width: 160px;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.main-photo {
+    width: 100%;
+    padding-top: 63.64%;
+    background: url('photos/header-background.jpeg');
+    background-size: contain;
+    position: relative;
+    top: -10%;
+    z-index: -1;   
+}
+.main-photo .layer {
+    position: absolute;
+    background-color: rgba(219, 190, 109, 0.466);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.layer .header {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.layer .header h1{
+    text-align: center;
+    font-size: 44px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.layer .header h1 em{
+   font-size: 56px;
+   font-weight: 800;
+   color: rgb(247, 119, 140);
+   font-style: unset;   
+}
+.layer .header button {
+    margin: 0 auto;
+    background-color: transparent;
+    font-size: 22px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 3px #000 solid;
+}
+.about {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    padding: 80px 0;
+    margin: 60px auto;
+}
+.about .about-us {
+    flex: 1;
+}
+.about .about-us .text-about {
+    width: 80%;
+}
+
+.about .about-us .text-about p{
+    color: #777;
+    font-size: 16px;
+}
+.about .about-us .text-about h2 {
+    font-weight: 500;
+    font-size: 36px;
+}
+.about .about-us .text-about em {
+    font-size: 52px;
+    font-weight: 800;
+    color: rgb(247, 119, 140);
+    font-style: unset;
+}
+.about .about-us .text-about button {
+    background-color: transparent;
+    border-radius: 5px;
+    height: 36px;
+    font-size: 16px;
+    color: #222;
+    border: 1px solid #222;
+    padding: 5px 10px;
+}
+.about .photo-about{
+    flex: 1;
+}
+.about .photo-about .photo-card {
+    width: 100%;
+    padding-top: 75%;
+    background: url("photos/footer-right-column.jpeg");
+    background-size: contain;
+    position: relative;  
+}
+.about .photo-about .photo-card::before {
+    position: absolute;
+    top: -7%;
+    left: -7%;
+    width: 100%;
+    height: 100%;
+    border: 8px solid rgb(248, 223, 152);
+    content: '';
+    z-index: -1;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0;
+    background-color: rgba(185, 185, 185, 0.418);
+    width: 100%;
+}
+footer h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+footer em {
+    font-size: 56px;
+    font-weight: 800;
+    color: rgb(247, 119, 140);
+    font-style: unset;
+}
+footer .footer-buttons button {
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #222;
+    color: #222;
+    margin: 0 20px;
+    font-size: 18px;
+}
+footer .footer-input {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+footer .footer-input input {
+    width: 25%;
+    border: solid 1px #aaa;
+    border-left: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 18px;
+}
+footer .footer-input button {
+    background-color: rgb(241, 117, 138);
+    border: #aaa 1px solid;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
